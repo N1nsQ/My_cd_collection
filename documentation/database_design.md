@@ -40,7 +40,12 @@ Genre
 * Note! Several bands may have songs with same name (for example cover songs) so there might be songs with same name in the table.  
 <img src="https://github.com/nina20126/My_cd_collection/assets/77397102/c372ca32-0a04-4687-a155-a084b122573f" alt="relationship between artists and albums table using crowsfoot notation" width="250">  
 
+#### Album and Genre
+* An album has only one main genre represented
+* A genre can be represented in many albums or none of listed albums.
+* Relationship: **one to many**
 
 ### Links
 [Crow's Foot Notation](https://www.freecodecamp.org/news/crows-foot-notation-relationship-symbols-and-how-to-read-diagrams/)
+[Lucidchart](https://www.lucidchart.com/)
 
