@@ -7,14 +7,6 @@ Member
 Song  
 Genre  
 
-### Junction tables
-band_and_album  
-band_and_member  
-band_and_song
-band_and_genre
-album_and_song
-album_and_genre
-
 ## Relationships between tables
 
 #### Band and Album 
@@ -53,8 +45,16 @@ album_and_genre
 * A genre can be represented in many albums or none of listed albums.
 * Relationship: **one to many**
 
+### Junction tables
+band_and_album  
+band_and_member  
+band_and_song  
+band_and_genre  
+album_and_song  
+album_and_genre  
+
 ### Links
-[Crow's Foot Notation](https://www.freecodecamp.org/news/crows-foot-notation-relationship-symbols-and-how-to-read-diagrams/)
-[Lucidchart](https://www.lucidchart.com/)
-[How to use Junction table in your database](https://www.youtube.com/watch?v=O4JDCFKnzPo)
+[Crow's Foot Notation](https://www.freecodecamp.org/news/crows-foot-notation-relationship-symbols-and-how-to-read-diagrams/)  
+[Lucidchart](https://www.lucidchart.com/)  
+[How to use Junction table in your database](https://www.youtube.com/watch?v=O4JDCFKnzPo)  
 
