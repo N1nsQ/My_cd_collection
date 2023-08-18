@@ -4,6 +4,7 @@ Creating database from scratch
 ### Tools used in this project
 [MySQL Workbench](https://www.mysql.com/products/workbench/) - Creating a dabase locally  
 [Quick Database Diagrams]()
+[Lucidchart](https://www.lucidchart.com/)
 
 ### Tutorials and other helpful links used with this project
 [Data Models](https://databases.biz/data-models/)  
