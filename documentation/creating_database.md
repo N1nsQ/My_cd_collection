@@ -102,9 +102,9 @@ ADD CONSTRAINT FOREIGN KEY(genre_id) REFERENCES genre(genre_id);
 ``` SQL
 CREATE TABLE member_and_instrument (
 	member_id int not null,
-    instrument_id int not null, 
-    primary key(member_id, instrument_id),
-    constraint member_id_fk foreign key (member_id) references member(member_id),
-    constraint instrument_id_fk foreign key (instrument_id) references instrument(instrument_id)
+    	instrument_id int not null, 
+    	primary key(member_id, instrument_id),
+    	constraint member_id_fk foreign key (member_id) references member(member_id),
+    	constraint instrument_id_fk foreign key (instrument_id) references instrument(instrument_id)
 );
 ```
