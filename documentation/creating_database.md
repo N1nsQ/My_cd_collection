@@ -28,7 +28,7 @@ VALUES (null, 'Sweet little sister', null, null, '000310');
 ```
 
 ``` SQL 
-INSERT INTO member (member_id, first_name, nickname, last_name, instrument, band_id)
+INSERT INTO member (member_id, first_name, nickname, last_name, instrument_id, band_id)
 VALUES (null, 'Dave', 'The Snake', 'Sabo', null, null);
 ```
 
