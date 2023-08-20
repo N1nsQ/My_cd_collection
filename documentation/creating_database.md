@@ -3,6 +3,18 @@
 ## CREATE TABLE
 
 ```SQL
+CREATE TABLE album (
+	album_id int NOT NULL AUTO_INCREMENT,
+	album_name varchar(255),
+	release_year int,
+	band_id int,
+	genre_id int,
+	song_id int,
+    	PRIMARY KEY (album_id)
+);
+```
+
+```SQL
 CREATE TABLE band (
 	band_id int NOT NULL AUTO_INCREMENT,
     	band_name varchar(255) NOT NULL UNIQUE,
@@ -12,6 +24,46 @@ CREATE TABLE band (
 	member_id int,
 	song_id int,
     	PRIMARY KEY (band_id)
+);
+```
+
+``` SQL
+CREATE TABLE genre (
+	genre_id int NOT NULL AUTO_INCREMENT,
+	genre_name varchar(255),
+	band_id int,
+	album_id int,
+    	PRIMARY KEY (genre_id)
+);
+```
+
+``` SQL
+CREATE TABLE instrument (
+	instrument_id int NOT NULL AUTO_INCREMENT,
+	instrument varchar(50),
+    	PRIMARY KEY (instrument_id)
+);
+```
+
+```SQL
+CREATE TABLE member (
+	member_id int NOT NULL AUTO_INCREMENT,
+	first_name varchar(50),
+	nickname varchar(50),
+	last_name varchar(50),
+	instrument_id int,
+	band_id int,
+    	PRIMARY KEY (member_id)
+);
+```
+
+``` SQL
+CREATE TABLE song (
+	song_id int NOT NULL AUTO_INCREMENT,
+	song_name varchar(255),
+	band_id,
+	album_id,
+    	PRIMARY KEY (song_id)
 );
 ```
 
@@ -44,4 +96,9 @@ VALUES (null, 'lead vocals', null);
 ``` SQL
 ALTER TABLE band
 ADD CONSTRAINT FOREIGN KEY(genre_id) REFERENCES genre(genre_id);
+```
+
+## JUNCTION TABLES
+``` SQL
+
 ```
