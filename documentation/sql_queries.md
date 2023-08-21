@@ -28,3 +28,12 @@ left join member m on bam.member_id = m.member_id
 where band_name = 'Skid Row';
 ```
 The command below presents all band members who play in Skid Row.
+
+### Band and album
+```SQL
+select b.band_name, a.album_name, a.release_year from album a
+left join band_and_album baa on a.album_id = baa.album_id
+left join band b on baa.band_id = b.band_id
+where b.band_name = 'Skid Row';
+```
+Select all albums from Skid Row
