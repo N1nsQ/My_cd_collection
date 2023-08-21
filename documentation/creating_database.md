@@ -1,15 +1,12 @@
 # CREATING DATABASE
 
-## CREATE TABLE
+## CREATING TABLES
 
 ```SQL
 CREATE TABLE album (
 	album_id int NOT NULL AUTO_INCREMENT,
 	album_name varchar(255),
 	release_year int,
-	band_id int,
-	genre_id int,
-	song_id int,
     	PRIMARY KEY (album_id)
 );
 ```
@@ -19,10 +16,6 @@ CREATE TABLE band (
 	band_id int NOT NULL AUTO_INCREMENT,
     	band_name varchar(255) NOT NULL UNIQUE,
     	year_of_foundation year,
-	genre_id int,
-	album_id int,
-	member_id int,
-	song_id int,
     	PRIMARY KEY (band_id)
 );
 ```
@@ -31,8 +24,6 @@ CREATE TABLE band (
 CREATE TABLE genre (
 	genre_id int NOT NULL AUTO_INCREMENT,
 	genre_name varchar(255),
-	band_id int,
-	album_id int,
     	PRIMARY KEY (genre_id)
 );
 ```
@@ -51,8 +42,6 @@ CREATE TABLE member (
 	first_name varchar(50),
 	nickname varchar(50),
 	last_name varchar(50),
-	instrument_id int,
-	band_id int,
     	PRIMARY KEY (member_id)
 );
 ```
@@ -60,54 +49,12 @@ CREATE TABLE member (
 ``` SQL
 CREATE TABLE song (
 	song_id int NOT NULL AUTO_INCREMENT,
+	track_number int,
 	song_name varchar(255),
-	band_id,
-	album_id,
     	PRIMARY KEY (song_id)
 );
 ```
-
-## INSERT INTO
-
-``` SQL 
-INSERT INTO album (album_id, album_name, release_year, band_id, genre_id, song_id)
-VALUES (null, 'Skid Row', 1989, null, null, null);
-```
-
-``` SQL 
-INSERT INTO song (song_id, song_name, band_id, album_id, duration)
-VALUES (null, 'Sweet little sister', null, null, '000310');
-```
-
-``` SQL 
-INSERT INTO member (member_id, first_name, nickname, last_name, instrument_id, band_id)
-VALUES (null, 'Dave', 'The Snake', 'Sabo', null, null);
-```
-
-``` SQL 
-INSERT INTO instrument (instrument_id, instrument, member_id)
-VALUES (null, 'lead vocals', null);
-```
-
-
-
-## ALTER TABLE
-
-``` SQL
-ALTER TABLE band
-ADD CONSTRAINT FOREIGN KEY(genre_id) REFERENCES genre(genre_id);
-```
-
-## JUNCTION TABLES
-``` SQL
-CREATE TABLE member_and_instrument (
-	member_id int not null,
-    	instrument_id int not null, 
-    	primary key(member_id, instrument_id),
-    	constraint member_id_fk foreign key (member_id) references member(member_id),
-    	constraint instrument_id_fk foreign key (instrument_id) references instrument(instrument_id)
-);
-```
+## JUCTION TABLE
 
 ``` SQL
 CREATE TABLE band_and_album (
@@ -119,12 +66,28 @@ CREATE TABLE band_and_album (
 );
 ```
 
-```SQL
-create table band_and_song (
-	band_id int not null,
-	song_id int not null,
-	primary key (band_id, song_id),
-	constraint fk_band foreign key (band_id) references band(band_id),
-	constraint fk_song foreign key (song_id) references song(song_id)
-);
+## INSERT DATA TO TABLES
+
+``` SQL 
+INSERT INTO song(track_number, song_name, duration)
+values(1, "Divide",000404), 
+(2, "Diaries",000332), 
+(3, "Superstition",000351), 
+(4, "Destroyer",000342), 
+(5, "Surrender",000517), 
+(6, "Oceania",000411), 
+(7, "Rain",000346), 
+(8, "Beyond",000351), 
+(9, "The Other Side",000430), 
+(10, "Trinity",000224);
+```
+
+``` SQL 
+INSERT INTO album (album_name, release_year)
+VALUES ("Superstition", 2014);
+```
+
+``` SQL 
+INSERT INTO band_and_genre (band_id, genre_id)
+VALUES (3,11),(3,12),(3,13);
 ```
