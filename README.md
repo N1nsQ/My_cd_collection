@@ -5,6 +5,13 @@ Creating database from scratch
 * relationships between tables
 * junction tables
 
+### How to improve the database
+* add record studio information for all albums
+* Current band members and past band members listed
+* is band still active
+* add album cover image
+* add album type: is it studio record, live record, single, collection album etc
+
 
 ### Tools used in this project
 [MySQL Workbench](https://www.mysql.com/products/workbench/) - Creating a dabase locally  
