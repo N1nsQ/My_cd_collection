@@ -108,3 +108,13 @@ CREATE TABLE member_and_instrument (
     	constraint instrument_id_fk foreign key (instrument_id) references instrument(instrument_id)
 );
 ```
+
+``` SQL
+CREATE TABLE band_and_album (
+	band_id int not null,
+    album_id int not null,
+    primary key (band_id, album_id),
+    constraint band_fk foreign key (band_id) references band(band_id),
+    constraint album_fk foreign key (album_id) references album(album_id)
+);
+```
