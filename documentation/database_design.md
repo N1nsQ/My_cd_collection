@@ -1,11 +1,13 @@
 # Database Design
 
-## Tables
-Band  
-Album  
-Member  
-Song  
-Genre  
+## Main tables
+
+* Album 
+* Band  
+* Genre
+* Instrument
+* Member  
+* Song  
 
 ## Relationships between tables
 
@@ -53,17 +55,21 @@ Genre
 <img src="https://github.com/nina20126/My_cd_collection/assets/77397102/7d790db4-23f0-4953-a3d1-a90bd87bc96b" alt="relationship between member and instument tables using crowsfoot notation" width="250">  
 
 
-### Junction tables
-band_and_album  
-band_and_member  
-band_and_song  
-band_and_genre  
-album_and_song  
-album_and_genre  
-member_amd_instrument
+### Junction tables needed
+
+* album_and_genre
+* album_and_song
+* band_and_album
+* band_and_genre 
+* band_and_member  
+* band_and_song
+* member_and_instrument
+
+
+### Final EER Diagram from MySQL Workbench
+
+![image](https://github.com/nina20126/My_cd_collection/assets/77397102/864a8979-73d0-4eea-9fbd-ac4c59b75cd8)
 
 ### Links
 [Crow's Foot Notation](https://www.freecodecamp.org/news/crows-foot-notation-relationship-symbols-and-how-to-read-diagrams/)  
-[Lucidchart](https://www.lucidchart.com/)  
-[How to use Junction table in your database](https://www.youtube.com/watch?v=O4JDCFKnzPo)  
 
