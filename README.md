@@ -1,5 +1,10 @@
-# My CD collection - Creating a database with scratch
-Creating database from scratch
+# My CD collection - Creating a database from scratch
+
+I wanted to practise SQL skills, so I decided to build a database from scratch. This project started with database design and collecting some sample data, and then testing that all the relationships between tables works as expected. Couple of mistakes occurred during the journey so before filling the database I made some cleaning with the code.  
+
+This database and all its information are based on my personal collection of cd's. It was very fun to work with project which was actually related to real life. I find it very useful also because I can now easily browse my collection based on different conditions!  
+
+I am planning to develop this project further and place the database online. There will be a web site where user can browse the collection and add new cd's.
 
 ### What did I learn? 
 * database design
