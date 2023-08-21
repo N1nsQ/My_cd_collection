@@ -30,4 +30,5 @@ I am planning to develop this project further and place the database online. The
 [Discogs](https://www.discogs.com/)  
 [Crows foot notation](https://www.freecodecamp.org/news/crows-foot-notation-relationship-symbols-and-how-to-read-diagrams/)  
 [Learn Database Normalization](https://www.youtube.com/watch?v=GFQaEYEc8_8)  
+[How to use Junction table in your database](https://www.youtube.com/watch?v=O4JDCFKnzPo)  
 HAMK teaching materials
