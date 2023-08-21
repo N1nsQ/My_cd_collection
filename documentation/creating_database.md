@@ -112,9 +112,19 @@ CREATE TABLE member_and_instrument (
 ``` SQL
 CREATE TABLE band_and_album (
 	band_id int not null,
-    album_id int not null,
-    primary key (band_id, album_id),
-    constraint band_fk foreign key (band_id) references band(band_id),
-    constraint album_fk foreign key (album_id) references album(album_id)
+    	album_id int not null,
+    	primary key (band_id, album_id),
+    	constraint band_fk foreign key (band_id) references band(band_id),
+    	constraint album_fk foreign key (album_id) references album(album_id)
+);
+```
+
+```SQL
+create table band_and_song (
+	band_id int not null,
+	song_id int not null,
+	primary key (band_id, song_id),
+	constraint fk_band foreign key (band_id) references band(band_id),
+	constraint fk_song foreign key (song_id) references song(song_id)
 );
 ```
