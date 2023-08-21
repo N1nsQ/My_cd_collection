@@ -59,3 +59,13 @@ left join band b on b.band_id = baa.band_id
 where b.band_name = 'Skid Row';
 ```
 Select all albums from skid row and show all songs and their duration
+
+```SQL
+select b.band_name, a.album_name, s.song_name, s.duration from band b
+left join band_and_album baa on b.band_id = baa.band_id
+left join album a on baa.album_id = a.album_id
+left join album_and_song aas on a.album_id = aas.album_id
+left join song s on s.song_id = aas.song_id
+where album_name = 'Nymphetamine';
+```
+List all songs from album Nymphetamine
