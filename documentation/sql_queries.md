@@ -37,3 +37,14 @@ left join band b on baa.band_id = b.band_id
 where b.band_name = 'Skid Row';
 ```
 Select all albums from Skid Row
+
+### Band, album and song
+```SQL
+select b.band_name, s.song_name, a.album_name from band b
+left join band_and_song bas on b.band_id = bas.band_id
+left join song s on bas.song_id = s.song_id
+left join band_and_album baa on b.band_id = baa.band_id
+left join album a on baa.album_id = a.album_id
+where b.band_name = 'Skid Row';
+```
+Table shows all Skid Row songs and which album they belog to.
