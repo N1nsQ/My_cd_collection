@@ -2,6 +2,7 @@
 Creating database from scratch
 
 ### What did I learn? 
+* database design
 * relationships between tables
 * junction tables
 
