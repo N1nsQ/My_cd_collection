@@ -12,6 +12,7 @@ Creating database from scratch
 * is band still active
 * add album cover image
 * add album type: is it studio record, live record, single, collection album etc
+* country where the band is from
 
 
 ### Tools used in this project
