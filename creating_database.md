@@ -66,8 +66,7 @@ CREATE TABLE album_and_song (
 );
 ```
 ### Juction table creation explained
-
-![image](https://github.com/nina20126/My_cd_collection/assets/77397102/1452b6fc-48b3-4720-9c90-3e197ab5ee75)
+<img src="https://github.com/nina20126/My_cd_collection/assets/77397102/1452b6fc-48b3-4720-9c90-3e197ab5ee75" alt="junction table creation explained" width="600">
 
 
 Here we are creating a junction table called ```album_and_song```. This table makes it possible to create many to many relationships. In this case, an album can have many songs, and songs can belong to many albums. (For example, collection albums, special editions, EP's etc.) There are two fields in this table: ```album_id``` and ```song_id```. These two fields are also primary keys of the table.  
