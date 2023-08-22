@@ -57,14 +57,23 @@ CREATE TABLE song (
 ## JUCTION TABLE
 
 ``` SQL
-CREATE TABLE band_and_album (
-	band_id int not null,
-    	album_id int not null,
-    	primary key (band_id, album_id),
-    	constraint band_fk foreign key (band_id) references band(band_id),
-    	constraint album_fk foreign key (album_id) references album(album_id)
+CREATE TABLE album_and_song (
+	album_id int not null,
+    	song_id int not null,
+    	primary key (album_id, song_id),
+    	constraint fk_album_id foreign key (album_id) references album(album_id),
+    	constraint fk_song_id foreign key (song_id) references song(song_id)
 );
 ```
+### Juction table creation explained
+
+![image](https://github.com/nina20126/My_cd_collection/assets/77397102/b3983952-a6e3-4405-bb2a-421437656954)
+
+Here we are creating a junction table called ```album_and_song```. This table makes it possible to create many to many relationships. In this case, an album can have many songs, and songs can belong to many albums. (For example, collection albums, special editions, EP's etc.) There are two fields in this table: ```album_id``` and ```song_id```. These two fields are also primary keys of the table.  
+
+SQL constraints are used to specify rules for the data in a table. This table has two constraints, and they are named ```fk_album_id``` and ```fk_song_id```. Names could be basically anything, but it is common to include fk in the name and try to figure descriptive name.  
+
+```album_id``` and ```song_id```that are values of the ```album_and_song``` table, are also foreign keys. The foreign key ```album_id``` references to the table called ```album``` (yellow) and that tables field called also ```album_id``` (yellow.) The second foreign key ```song_id``` references to the table called ```song``` (pink) and that tables field called also ```song_id``` (pink).
 
 ## INSERT DATA TO TABLES
 
@@ -91,3 +100,4 @@ VALUES ("Superstition", 2014);
 INSERT INTO band_and_genre (band_id, genre_id)
 VALUES (3,11),(3,12),(3,13);
 ```
+When inserting data into a junction table, we use ID values. In this case, band_id and genre_id. ID's can be checked in reference tables using commands ```SELECT * FROM band``` (band_id) and ```SELECT * FROM genre``` (genre_id). 
