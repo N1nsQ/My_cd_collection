@@ -68,8 +68,5 @@
 
 ### Final EER Diagram from MySQL Workbench
 
-![image](https://github.com/nina20126/My_cd_collection/assets/77397102/864a8979-73d0-4eea-9fbd-ac4c59b75cd8)
-
-### Links
-[Crow's Foot Notation](https://www.freecodecamp.org/news/crows-foot-notation-relationship-symbols-and-how-to-read-diagrams/)  
+![image](https://github.com/nina20126/My_cd_collection/assets/77397102/ed2b92bb-714c-4d3b-8178-0faca4a47e66)
 
