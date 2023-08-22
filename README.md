@@ -1,5 +1,5 @@
 # My CD collection - Creating a database from scratch
-<img src="https://github.com/nina20126/My_cd_collection/assets/77397102/590e88b6-6a3a-4006-ab22-7a18f0cb3a7a" alt="picture of my personal cd collection" width="450"><br />
+<img src="https://github.com/nina20126/My_cd_collection/assets/77397102/e750c02a-a6a6-47be-8a9b-b6ca3f29ba8c" alt="picture of my personal cd collection" width="450"><br />
 
 With this project I learned a lot about database desing, relationships between tables and SQL commands. I created a local server with MySQL Workbench where the database is located. This database and all its information are based on my personal collection of cd's.
   
