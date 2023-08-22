@@ -23,7 +23,7 @@ CREATE TABLE band (
 ``` SQL
 CREATE TABLE genre (
 	genre_id int NOT NULL AUTO_INCREMENT,
-	genre_name varchar(255),
+	genre_name varchar(255) UNIQUE,
     	PRIMARY KEY (genre_id)
 );
 ```
@@ -31,7 +31,7 @@ CREATE TABLE genre (
 ``` SQL
 CREATE TABLE instrument (
 	instrument_id int NOT NULL AUTO_INCREMENT,
-	instrument varchar(50),
+	instrument varchar(50) UNIQUE,
     	PRIMARY KEY (instrument_id)
 );
 ```
