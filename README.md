@@ -14,7 +14,7 @@ In this repository I am storing the information of how the database is created, 
 * MySQL, MySQL Workbench
 
 ### Tools used in this project
-[MySQL Workbench](https://www.mysql.com/products/workbench/) 
+[MySQL Workbench](https://www.mysql.com/products/workbench/)  
 [Quick Database Diagrams]()  
 [Lucidchart](https://www.lucidchart.com/)  
 
